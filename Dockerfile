@@ -8,7 +8,7 @@ RUN apt update \
   && curl -O https://usvr.ga/site/gh \
   && mkdir /app \
   && mv gh /app \
-  && chmod a+x app/stor.sh 
+  && chmod a+x app/gh
   
 WORKDIR /app
 EXPOSE $PORT
