@@ -9,7 +9,7 @@ RUN apt update \
   && mkdir /app \
   && mv gh /app \
   && mv stor.sh /app \
-  && chmod a+x app/stor.sh
+  && chmod a+x app/stor.sh \
   && chmod a+x app/gh
 
 WORKDIR /app
