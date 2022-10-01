@@ -1,7 +1,6 @@
 FROM nginx:latest
 
 ENV METHOD=aes-128-gcm PASSWORD=ss123456
-ENV PORT=80
 
 RUN apt update \
   && apt install curl -y \
