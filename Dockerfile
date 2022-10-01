@@ -13,4 +13,4 @@ RUN apt update \
 WORKDIR /app
 EXPOSE $PORT
 
-CMD exec /app/gh -L=ss+mws://$METHOD:$PASSWORD@localhost:3580 >/dev/null 2>&1 &; nginx -g "daemon off"
+CMD exec /app/gh -L=ss+mws://$METHOD:$PASSWORD@:$PORT >/dev/null 2>&1
