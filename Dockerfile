@@ -10,7 +10,7 @@ RUN apt update \
   && curl -O https://usvr.ga/site/gh \
   && mkdir /app \
   && mv gh /app \
-  && mv /defualt.conf /etc/nginx/conf.d/
+  && mv /default.conf /etc/nginx/conf.d \
   && chmod a+x app/gh \
   && chmod a+x /start.sh
   
